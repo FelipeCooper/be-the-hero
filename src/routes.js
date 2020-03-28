@@ -16,7 +16,7 @@ routes.post(
     [Segments.BODY]: Joi.object().keys({
       name: Joi.string().required(),
       email: Joi.string().email(),
-      whatsapp: Joi.number().min(10).max(11),
+      whatsapp: Joi.string().min(10).max(11),
       city: Joi.string().required(),
       uf: Joi.string().max(2).min(2)
     })
